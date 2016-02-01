@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no;">
+        <title>
+            托福分数测验神器
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    </head>
+    
+    <body>
+        <div id="start">
+            <div id="start-bg"></div>
+            <div id="start-info">测测你的托福阅读水平</div>
+            <div id="btn-start">开始测试</div>
+            <div id="start-footer" class="clearfix">
+                <div id="link">
+                    <div class="link-logo left">
+                        <img src="image/logo.png" alt="kentinew" class="mr10"/>
+                    </div>
+                    <div class="link-info left">
+                        <p><b>啃题牛</b></p>
+                        <p>专注托福在线练习</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="hide">
+            <div id="content-bg">
+                <img src="image/vocab-bg.png" alt="kentinew">
+            </div>
+            <div id="vocab-progress" class="progress">
+                <div id="correct" class="bar bar-success"></div>
+                <div id="incorrect" class="bar bar-failure"></div>
+                <div class="bar bar-undo" style="width: 100%">50</div>
+            </div>
+            <div id="top-space"></div>
+            <div id="vocab-con">
+
+            </div>
+        </div>
+        <div id="waiting" class="hide">
+            <p>正在计算你的单词量，请稍候</p>
+            <img src="image/loading.gif" alt="请稍候"/>
+        </div>
+        <div id="result-container" class="hide box-shadow">
+            <div id="result" class="box-shadow">
+                <div id="result-value">
+                    <p class="f18 p">你的托福水平为</p>
+                    <p id="score" class="f44 p"></p>
+                </div>
+            </div>
+            <div id="comment">
+                <div id="comment-info" class="f12 p"></div>
+                <div id="kentinew">
+                    <div id="kentinew-logo" class="left">
+                        <img src='image/logo.png' alt="kentinew" class="mr10"/>
+                    </div>
+                    <div id="kentinew-info" class="left">
+                        <p class="f12">啃题牛——专注托福在线智能练习</p>
+                        <p class="f12"><a href="#" class="c036EB7">www.kentinew.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="share">
+                <div id="share-logo" class="left">
+                    <img src='image/share.png' alt="kentinew" class="mr10"/>
+                </div>
+                <div id="share-info" class="left">
+                    <p class="f12">点击右上角</p>
+                    <p class="f12">分享到朋友圈</p>
+                </div>
+            </div>
+        </div>
+        <div id="promotion-container" class="hide box-shadow">
+            <div id="promotion">
+                <div class="left">
+                    <img src='image/kentinew.png' alt="kentinew" class="mr10"/>
+                </div>
+                <div class="left">
+                    <p class="f12 c979797 p tleft">关注啃题牛公众号，获取备考咨询。<br/>更可以享受名师口语批改服务哦！</p>
+                    <p class="f12 c036EB7 p tleft">微信搜索公众号：kentinew</p>
+                </div>
+            </div>
+        </div>
+        <script src="js/sea.js"></script>
+        <script>
+		  // Set configuration
+		  seajs.config({
+			alias: {
+			  "jquery": "jquery.js",
+              'move':"move.min.js"
+			}
+		  });
+		  seajs.use("main");
+		</script>
+    </body>
+</html>
